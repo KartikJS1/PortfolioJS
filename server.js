@@ -7,12 +7,13 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://portfoliojs-4j2n.onrender.com",
+      "http://localhost:5173",
       "https://portfolio-js-frontend-62k2htvz8-kartik-ramesh-chavans-projects.vercel.app",
     ],
     credentials: true,
   })
 );
+
 app.use(express.json());
 
 mongoose

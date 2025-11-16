@@ -15,6 +15,7 @@ const upload = multer({ storage });
 // GET list
 router.get("/", async (req, res) => {
   const items = await Project.find().sort({ createdAt: -1 });
+  console.log(items);
   res.json(items);
 });
 

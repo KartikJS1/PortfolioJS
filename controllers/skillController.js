@@ -1,3 +1,4 @@
+const { Console } = require("console");
 const Skill = require("../models/Skill");
 
 exports.createSkill = async (req, res) => {
@@ -13,6 +14,7 @@ exports.getSkills = async (req, res) => {
   try {
     const skills = await Skill.find();
     res.json(skills);
+    console.log(skills);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

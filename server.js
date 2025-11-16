@@ -8,7 +8,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://portfolio-js-frontend-62k2htvz8-kartik-ramesh-chavans-projects.vercel.app",
+      "https://portfolio-js-frontend-c7m7h4mik-kartik-ramesh-chavans-projects.vercel.app/",
     ],
     credentials: true,
   })

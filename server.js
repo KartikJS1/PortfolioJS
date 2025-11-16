@@ -4,7 +4,15 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://portfoliojs-4j2n.onrender.com",
+      "https://portfolio-js-frontend-62k2htvz8-kartik-ramesh-chavans-projects.vercel.app",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 mongoose
